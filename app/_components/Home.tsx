@@ -3,8 +3,9 @@
 import React, { ChangeEvent, MouseEvent, useState } from "react"
 import { WordForm } from "./WordForm"
 import { WordList } from "./WordList"
-import { initialWordList } from "../../../public/wordList"
+import { initialWordList } from "../../public/wordList"
 import { toast } from "react-toastify"
+import { Logo } from "./Logo"
 
 export interface WordListType {
   id: number
@@ -80,7 +81,7 @@ export const Home = () => {
   }
 
   return (
-    <>
+    <div className="flex flex-col">
       <div className="flex flex-col md:flex-row w-full gap-x-10 gap-y-5 md:gap-y-0">
         <div className="w-full md:w-1/2">
           <WordForm
@@ -100,6 +101,6 @@ export const Home = () => {
           <WordList wordList={wordList} handleDelete={handleDelete} />
         </div>
       </div>
-    </>
+    </div>
   )
 }

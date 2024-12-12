@@ -8,7 +8,7 @@ export default function DashboardLayout({
   children: React.ReactNode
 }) {
   return (
-    <section>
+    <section className="">
       {/* Include shared UI here e.g. a header or sidebar */}
       <NavBar />
       <ToastContainer
