@@ -91,9 +91,6 @@ export const Home = () => {
             handleHuriganaChange={handleHuriganaChange}
             handleMeaningChange={handleMeaningChange}
             handleClick={handleClick}
-            handleKeyDown={handleKeyDown}
-            japanese={isLearningJapanese}
-            handleCheckbox={handleCheckbox}
           />
         </div>
         <div className="w-full md:w-1/2">

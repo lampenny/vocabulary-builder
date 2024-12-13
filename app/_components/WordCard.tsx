@@ -1,14 +1,9 @@
 import React, { FC, useState } from "react"
 import { EyeSlashIcon, TrashIcon } from "@heroicons/react/24/outline"
-
-interface Vocab {
-  japanese: string | null
-  furigana: string | null
-  meaning: string | null
-}
+import { WordListType } from "./Home"
 
 interface WordCardProps {
-  vocab: Vocab
+  vocab: WordListType
   handleDelete: (word: string) => void
 }
 

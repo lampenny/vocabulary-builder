@@ -9,9 +9,6 @@ interface FormCardProps {
   handleHuriganaChange: (e: ChangeEvent<HTMLInputElement>) => void
   handleMeaningChange: (e: ChangeEvent<HTMLInputElement>) => void
   handleClick: (e: MouseEvent<HTMLButtonElement>) => void
-  handleKeyDown: (e: KeyboardEvent) => void
-  handleCheckbox?: MouseEventHandler<HTMLInputElement>
-  japanese: boolean
 }
 
 export const WordForm: FC<FormCardProps> = ({
@@ -22,9 +19,6 @@ export const WordForm: FC<FormCardProps> = ({
   handleHuriganaChange,
   handleMeaningChange,
   handleClick,
-  handleKeyDown,
-  handleCheckbox,
-  japanese,
 }) => {
   return (
     <div className="flex flex-col justify-center items-center border rounded-lg p-10 border-yellow-600">
@@ -54,7 +48,6 @@ export const WordForm: FC<FormCardProps> = ({
         <button
           className="relative text-3xl text-orange-500 bg-white rounded-lg border-2 border-orange-400 p-4 w-full font-black"
           onClick={(e) => handleClick(e)}
-          // onKeyDown={(e) => handleKeyDown(e)}
         >
           +
         </button>
