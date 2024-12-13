@@ -1,4 +1,4 @@
-import React, { ChangeEvent, MouseEvent, FC } from "react"
+import React, { ChangeEvent, FC } from "react"
 
 interface InputProps {
   value?: string

@@ -29,7 +29,7 @@ export const NavBar: FC = () => {
 
   return (
     <div
-      className={`z-50 fixed bottom-0 left-0 w-full bg-gray-800 text-white transition-transform duration-300 ${
+      className={`z-50 fixed bottom-0 left-0 w-full bg-orange-500 text-white transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "translate-y-full"
       }`}
     >

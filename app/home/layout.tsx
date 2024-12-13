@@ -12,7 +12,7 @@ export default function DashboardLayout({
       {/* Include shared UI here e.g. a header or sidebar */}
       <NavBar />
       <ToastContainer
-        position="bottom-left"
+        position="top-center"
         autoClose={2000}
         pauseOnFocusLoss={false}
         limit={1}

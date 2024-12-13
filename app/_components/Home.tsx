@@ -5,7 +5,6 @@ import { WordForm } from "./WordForm"
 import { WordList } from "./WordList"
 import { initialWordList } from "../../public/wordList"
 import { toast } from "react-toastify"
-import { Logo } from "./Logo"
 
 export interface WordListType {
   id: number
@@ -35,7 +34,7 @@ export const Home = () => {
 
   const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
     if (word) {
-      toast.success("word added!")
+      toast.success("Word added!")
       setWordList([
         {
           id: wordList.length + 1,
