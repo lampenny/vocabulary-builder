@@ -1,6 +1,10 @@
 # Vocabulary Builder
 
-A vocabulary builder to help with Japanese language learning.
+A vocabulary builder to help with Japanese language learning. Uses Nextjs and Tailwindcss.
+
+### Demo credentials
+
+Enter any email/password. Alternatively go straight to `/home` url.
 
 ## Getting Started
 
